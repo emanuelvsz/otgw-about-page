@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:ital,wght@1,100;1,400&display=swap');
+        
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(232, 219, 170, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    display: flex;
+    font-family: 'Cinzel', sans-serif
+}
