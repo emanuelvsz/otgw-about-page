@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Minha Página</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:ital,wght@1,300&family=Lobster+Two&family=Montserrat:ital,wght@1,100;1,400&family=Sacramento&display=swap');
 
@@ -18,7 +19,7 @@
         }
 
         h1 {
-            margin-left: 3vw;
+            margin-left: 6vw;
             font-family: 'Sacramento', sans-serif;
             color: #1F1612;
         }
@@ -112,9 +113,9 @@
         section::before {
             content: "";
             background-image: url('https://wallpaperaccess.com/full/1370379.jpg');
-            background-size: 110%; /* Aumenta o tamanho da imagem em relação à seção */
+            background-size: 110%;
             background-position: center;
-            width: 120%; /* Aumenta a largura da imagem em relação à seção */
+            width: 120%;
             height: 100%;
             position: absolute;
             filter: blur(5px);
@@ -126,10 +127,10 @@
                 transform: translate(0, 0);
             }
             50% {
-                transform: translate(20px, 0); /* Movimento para a direita */
+                transform: translate(20px, 0);
             }
             100% {
-                transform: translate(-20px, 0); /* Movimento de volta para a esquerda */
+                transform: translate(-20px, 0);
             }
         }
 
@@ -142,10 +143,10 @@
         #title-container {
             position: absolute;
             top: 0;
-            left: 10vw;
+            left: 6vw;
             margin-top: 5vh;
             text-align: left;
-            max-width: 60%; /* Defina a largura máxima desejada, por exemplo, 60% */
+            max-width: 60%;
         }
 
         h2 {
@@ -167,12 +168,102 @@
             color: lightgrey
         }
 
+        #icons {
+            display: flex;
+            align-items: center;
+            margin-top: 4vh;
+        }
+
+        .span {
+            color: white;
+            margin-right: 2vw;
+            display: flex;
+            align-items: center;
+        }
+
+        .span i {
+            margin-right: .5vw;
+        }
+
+        .fas {
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-img{
+            height: 20px;
+            width: 20px;
+        }
+
+        #type {
+            height: 3vh;
+            background-color: #0e0e0e;
+            opacity: .65px;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-left: 2vw;
+            padding-left: .5vw;
+            padding-right: .5vw;
+        }
+
+        .image-container {
+            height: 370px;
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            margin-left: 2vw;
+            background-color: green;
+            position: absolute;
+            right: 6%;
+            bottom: 25%;
+            background-image: url('https://m.media-amazon.com/images/M/MV5BYzhjNzI0NWEtMzEyYy00OGViLThhMjctMWQxNGQ3Y2IzOTY4XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        /* Botão oculto inicialmente */
+        .image-container .button-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container .button-container button {
+            background-color: #501b9f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button a {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+
+        .image-container:hover .button-container {
+            transform: translateY(0);
+        }
+
     </style>
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="/">Over The Garden Wall</a></h1>
+            <h1><a href="/">The Unknown</a></h1>
             <nav>
                 <ul>
                     <li><a href="/">About</a></li>
@@ -186,11 +277,27 @@
         <div id="main-content">
             <div id="title-container">
                 <h2>Over the Garden Wall</h2>
-                <h3>"Hidden shadows reveal deep secrets."</h3>
+                <h3>"Beware the Unknown's silent call."</h3>
                 <div>
                     <p>
                         "Over the Garden Wall" is a mysterious and enchanting animated series that follows the surreal adventures of two half-brothers, Wirt and Greg, as they find themselves lost in a strange and otherworldly forest known as The Unknown. With the help of a wise old woodsman and a talking bluebird named Beatrice, they must navigate a series of whimsical and sometimes eerie encounters with bizarre creatures and enigmatic characters. Along their journey, Wirt and Greg search for a way home while uncovering the mysteries of The Unknown and the dark secrets that lie within. This beautifully animated and atmospheric series combines elements of fantasy, folklore, and mystery, making it a captivating and thought-provoking tale for viewers of all ages.
                     </p>
+
+                    <div id="icons">
+                        <div class="span"><i class="fas fa-film"></i> 10 Episódios</div>
+                        <div class="span"><i class="fas fa-star"></i> 4.1/5.0</div>
+                        <img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/DJCTQ_-_L.svg/1200px-DJCTQ_-_L.svg.png" alt="">
+                        <div id="type">
+                            SERIADO
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="button-container">
+                    <button>
+                        <a href="https://play.hbomax.com/series/urn:hbo:series:GXufwFQjcx8PCwgEAAA95?source=googleHBOMAX&action=open">Assistir na HBO Max</a>
+                    </button>
                 </div>
             </div>
         </div>
