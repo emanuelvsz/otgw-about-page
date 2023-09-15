@@ -2,4 +2,4 @@
 
 * Home screen
 
-![image](https://github.com/emanuelvsz/otgw-about-page/assets/84058517/f93754c6-57cf-498a-8ec6-7771af1e0ef1)
+![image](https://github.com/emanuelvsz/otgw-about-page/assets/84058517/79ed4a03-a57b-4d77-8cbb-9efa73881a7e)
